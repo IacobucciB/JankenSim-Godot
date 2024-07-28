@@ -59,15 +59,15 @@ Una luz pálida ilumina el lugar. Todo lo que ves es una máquina expendedora zu
 Te acuestas y cierras los ojos. La luz no se apaga y te molesta. Luego de unos minutos evitándola te duermes. Cuando despiertas la habitación continúa idéntica.
 
 ### Máquina expendedora - Comprar
--	Café helado ($5)
--	Jugo ($3)
--	Bento ($25)
--	Galletas ($10)
+1. Café helado ($5)
+2. Jugo ($3)
+3. Bento ($25)
+4. Galletas ($10)
 
-Introduces 5 monedas y una serie de pitidos musicales acompañan la caída de una lata de café helado. Acaba a tu alcance con un golpe seco.
-Introduces 3 monedas y una serie de pitidos musicales acompañan la caída de una caja de jugo. Acaba a tu alcance con un golpe seco.
-Introduces 25 monedas y una serie de pitidos musicales acompañan la caída de una caja de bento. Acaba a tu alcance con un golpe seco.
-Introduces 10 monedas y una serie de pitidos musicales acompañan la caída de un paquete de galletas. Acaba a tu alcance con un golpe seco.
+- Introduces 5 monedas y una serie de pitidos musicales acompañan la caída de una lata de café helado. Acaba a tu alcance con un golpe seco.
+- Introduces 3 monedas y una serie de pitidos musicales acompañan la caída de una caja de jugo. Acaba a tu alcance con un golpe seco.
+- Introduces 25 monedas y una serie de pitidos musicales acompañan la caída de una caja de bento. Acaba a tu alcance con un golpe seco.
+- Introduces 10 monedas y una serie de pitidos musicales acompañan la caída de un paquete de galletas. Acaba a tu alcance con un golpe seco.
 
 ### Máquina expendedora - Patear
 Pateas la máquina. Una dolorosa corriente eléctrica recorre tu cuerpo al impacto, haciéndote caer al suelo entre espasmos.
