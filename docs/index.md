@@ -1,7 +1,7 @@
 # Index
 
 ## Mecánicas
-- Toma de decisiones de una lisata (Elige tu propia aventura).
+- Toma de decisiones de una lista (Elige tu propia aventura).
 - Navegación del mundo por zonas
 - NPCs reactivos y con rutinas estables pero alterables.
 - Paso del tiempo
