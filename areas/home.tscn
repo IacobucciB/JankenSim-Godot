@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://78wnwgwgodi1"]
+
+[ext_resource type="Texture2D" uid="uid://bhmy7e7te7dtr" path="res://img/violet.png" id="1_f6rsg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aypux"]
+size = Vector2(10, 10)
+
+[node name="Home" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+scale = Vector2(5, 5)
+texture = ExtResource("1_f6rsg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_aypux")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "[center]HOME[/center]"
+fit_content = true
+scroll_active = false
