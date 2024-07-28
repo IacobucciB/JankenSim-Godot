@@ -28,7 +28,7 @@
 ## Audiencia
 
 # TEST
-Te despiertas en una cama dentro de una habitación completamente blanca sin recuerdo de cómo llegaste. Una luz pálida ilumina el lugar. Todo lo que ves es una máquina expendedora zumbante y una ventana cerrada con una cortina metálica. Junto a la ventana hay un botón rojo que dice “jugar”.
+Te despiertas en una cama dentro de una habitación completamente blanca sin recuerdo de cómo llegaste. Una luz pálida ilumina el lugar. Todo lo que ves es una máquina expendedora zumbante, un reloj de pared y una ventana cerrada con una cortina metálica. Junto a la ventana hay un botón rojo que dice “jugar”.
 
 ## Esperar (0:20)
 ## Cama
