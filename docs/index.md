@@ -26,3 +26,15 @@
 - Eventualmente. No necesario
 
 ## Audiencia
+
+# TEST
+
+## Cama
+- Dormir
+
+## Máquina expendedora
+- Comprar
+- Patear
+
+## Ventana
+- Jugar
