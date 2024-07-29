@@ -75,6 +75,10 @@ func determine_winner(player_choice, computer_choice):
 		return -1 # Computer wins
 
 func increase_oroc(amount):
-	oroc += amount
+	Player.gold += amount
 	oro.clear()
-	oro.add_text("ORO: " + str(oroc))
+	oro.add_text("ORO: " + str(Player.gold))
+
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://expendedora.tscn")
