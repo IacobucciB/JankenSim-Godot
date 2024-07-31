@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhmy7e7te7dtr"
-path="res://.godot/imported/violet.png-0eff80abc79e64ff86addf26c390a741.ctex"
+uid="uid://cdmw6lpo0718e"
+path="res://.godot/imported/Maq exp.png-7c21fbd7c000f3a9b14576e98c1db281.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/violet.png"
-dest_files=["res://.godot/imported/violet.png-0eff80abc79e64ff86addf26c390a741.ctex"]
+source_file="res://img/assets/Maq exp.png"
+dest_files=["res://.godot/imported/Maq exp.png-7c21fbd7c000f3a9b14576e98c1db281.ctex"]
 
 [params]
 

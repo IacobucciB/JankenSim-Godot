@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kw78e1rfcrxc"
-path="res://.godot/imported/alive.png-770e6b8489a3d588a921bd088112e0d2.ctex"
+path="res://.godot/imported/alive.png-4213ed5af04d267b21df9ae23812c64d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/alive.png"
-dest_files=["res://.godot/imported/alive.png-770e6b8489a3d588a921bd088112e0d2.ctex"]
+source_file="res://img/colors/alive.png"
+dest_files=["res://.godot/imported/alive.png-4213ed5af04d267b21df9ae23812c64d.ctex"]
 
 [params]
 

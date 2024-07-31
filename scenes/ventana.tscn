@@ -1,0 +1,90 @@
+[gd_scene load_steps=4 format=3 uid="uid://14r7vaxle3bq"]
+
+[ext_resource type="Script" path="res://scenes/ventana.gd" id="1_yeg44"]
+[ext_resource type="Texture2D" uid="uid://8cfiwf4p2umb" path="res://img/assets/Close.png" id="2_okimm"]
+[ext_resource type="Texture2D" uid="uid://bk101nkkhkg3g" path="res://img/assets/Open.png" id="3_7vson"]
+
+[node name="Ventana" type="Node2D"]
+script = ExtResource("1_yeg44")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="PIEDRA" type="Button" parent="Control"]
+offset_left = 384.0
+offset_top = 416.0
+offset_right = 449.0
+offset_bottom = 447.0
+text = "PIEDRA"
+metadata/_edit_use_anchors_ = true
+
+[node name="PAPEL" type="Button" parent="Control"]
+offset_left = 384.0
+offset_top = 456.0
+offset_right = 449.0
+offset_bottom = 487.0
+text = "PAPEL"
+metadata/_edit_use_anchors_ = true
+
+[node name="TIJERAS" type="Button" parent="Control"]
+offset_left = 384.0
+offset_top = 496.0
+offset_right = 450.0
+offset_bottom = 527.0
+text = "TIJERAS"
+metadata/_edit_use_anchors_ = true
+
+[node name="ALEJARSE" type="Button" parent="Control"]
+offset_left = 368.0
+offset_top = 536.0
+offset_right = 448.0
+offset_bottom = 567.0
+text = "ALEJARSE"
+metadata/_edit_use_anchors_ = true
+
+[node name="HUB" type="Button" parent="Control"]
+offset_left = 384.0
+offset_top = 576.0
+offset_right = 448.0
+offset_bottom = 607.0
+text = "HUB"
+
+[node name="VENTANA" type="Node2D" parent="."]
+
+[node name="closed" type="Sprite2D" parent="VENTANA"]
+visible = false
+scale = Vector2(4, 4)
+texture = ExtResource("2_okimm")
+centered = false
+
+[node name="open" type="Sprite2D" parent="VENTANA"]
+scale = Vector2(4, 4)
+texture = ExtResource("3_7vson")
+centered = false
+
+[node name="LOG" type="RichTextLabel" parent="."]
+offset_left = 64.0
+offset_top = 256.0
+offset_right = 256.0
+offset_bottom = 576.0
+scroll_following = true
+metadata/_edit_use_anchors_ = true
+
+[node name="ORO" type="RichTextLabel" parent="."]
+offset_left = 320.0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 128.0
+text = "ORO:"
+scroll_following = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Control/PIEDRA" to="." method="_on_piedra_pressed"]
+[connection signal="pressed" from="Control/PAPEL" to="." method="_on_papel_pressed"]
+[connection signal="pressed" from="Control/TIJERAS" to="." method="_on_tijeras_pressed"]
+[connection signal="pressed" from="Control/ALEJARSE" to="." method="_on_alejarse_pressed"]
+[connection signal="pressed" from="Control/HUB" to="." method="_on_hub_pressed"]

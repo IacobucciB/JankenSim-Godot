@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdmw6lpo0718e"
-path="res://.godot/imported/Maq exp.png-e22b62242985f66fb2a2bf0dbe0af339.ctex"
+uid="uid://bk101nkkhkg3g"
+path="res://.godot/imported/Open.png-855af573226067b6718cb2b2bc66f8c7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/Maq exp.png"
-dest_files=["res://.godot/imported/Maq exp.png-e22b62242985f66fb2a2bf0dbe0af339.ctex"]
+source_file="res://img/assets/Open.png"
+dest_files=["res://.godot/imported/Open.png-855af573226067b6718cb2b2bc66f8c7.ctex"]
 
 [params]
 

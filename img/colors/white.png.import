@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj4b2wwiygucn"
-path="res://.godot/imported/dead_alive_10x10.png-186909a36ef52b1d4887752e3d58e130.ctex"
+uid="uid://t53uvngcy8ue"
+path="res://.godot/imported/white.png-0bf8994b7725efb2b7fdb627f1a1cccf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/dead_alive_10x10.png"
-dest_files=["res://.godot/imported/dead_alive_10x10.png-186909a36ef52b1d4887752e3d58e130.ctex"]
+source_file="res://img/colors/white.png"
+dest_files=["res://.godot/imported/white.png-0bf8994b7725efb2b7fdb627f1a1cccf.ctex"]
 
 [params]
 

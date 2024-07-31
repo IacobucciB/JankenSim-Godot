@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var oro = $ORO
+@onready var oro = $oro
 
 func _ready():
 	oro.clear()
@@ -16,4 +16,8 @@ func _on_jugo_pressed():
 		oro.clear()
 		oro.add_text("ORO: " + str(Player.gold))
 	else:
-		get_tree().change_scene_to_file("res://main.tscn")
+		get_tree().change_scene_to_file("res://scenes/hub.tscn")
+
+
+func _on_hub_pressed():
+	get_tree().change_scene_to_file("res://scenes/hub.tscn")

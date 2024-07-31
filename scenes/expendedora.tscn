@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1lxfwq5cd4l6"]
+
+[ext_resource type="Script" path="res://scenes/Expendedora.gd" id="1_ukdoh"]
+[ext_resource type="Texture2D" uid="uid://cdmw6lpo0718e" path="res://img/assets/Maq exp.png" id="2_beh2d"]
+
+[node name="Expendedora" type="Node2D"]
+script = ExtResource("1_ukdoh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_beh2d")
+centered = false
+
+[node name="oro" type="RichTextLabel" parent="."]
+offset_left = 320.0
+offset_top = 64.0
+offset_right = 405.0
+offset_bottom = 95.0
+scroll_following = true
+
+[node name="jugo" type="Button" parent="."]
+offset_left = 400.0
+offset_top = 528.0
+offset_right = 449.0
+offset_bottom = 559.0
+text = "JUGO"
+
+[node name="hub" type="Button" parent="."]
+offset_left = 400.0
+offset_top = 568.0
+offset_right = 448.0
+offset_bottom = 599.0
+text = "HUB"
+
+[connection signal="pressed" from="jugo" to="." method="_on_jugo_pressed"]
+[connection signal="pressed" from="hub" to="." method="_on_hub_pressed"]

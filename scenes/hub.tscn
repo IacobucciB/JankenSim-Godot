@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://jcsm2aaqn1db"]
+
+[ext_resource type="Texture2D" uid="uid://cl7otiuyg0ww6" path="res://img/assets/Hub.png" id="1_3a28f"]
+[ext_resource type="Script" path="res://scenes/hub.gd" id="1_31hxb"]
+
+[node name="Hub" type="Node2D"]
+script = ExtResource("1_31hxb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_3a28f")
+centered = false
+
+[node name="expendedora" type="Button" parent="."]
+offset_left = 320.0
+offset_top = 576.0
+offset_right = 448.0
+offset_bottom = 607.0
+text = "EXPENDEDORA"
+
+[node name="ventana" type="Button" parent="."]
+offset_left = 360.0
+offset_top = 536.0
+offset_right = 448.0
+offset_bottom = 567.0
+text = "VENTANA"
+
+[connection signal="pressed" from="expendedora" to="." method="_on_expendedora_pressed"]
+[connection signal="pressed" from="ventana" to="." method="_on_ventana_pressed"]
