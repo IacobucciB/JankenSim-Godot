@@ -1,26 +1,85 @@
-[gd_scene load_steps=6 format=3 uid="uid://ukk0r3rxj57q"]
+[gd_scene load_steps=5 format=3 uid="uid://ukk0r3rxj57q"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_3wyid"]
-[ext_resource type="PackedScene" uid="uid://c0k37l3x1nr2f" path="res://areas/farmland.tscn" id="1_x36xp"]
-[ext_resource type="PackedScene" uid="uid://cukjdbbdi3hiq" path="res://areas/market.tscn" id="1_ylocl"]
-[ext_resource type="PackedScene" uid="uid://78wnwgwgodi1" path="res://areas/home.tscn" id="3_5fq08"]
-[ext_resource type="PackedScene" uid="uid://bd1rxjd8hmfvr" path="res://mobs/villager.tscn" id="4_dj5gm"]
+[ext_resource type="Texture2D" uid="uid://8cfiwf4p2umb" path="res://img/Close.png" id="2_04cfr"]
+[ext_resource type="Texture2D" uid="uid://bk101nkkhkg3g" path="res://img/Open.png" id="2_f1csy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0i0ts"]
+size = Vector2(192, 192)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3wyid")
 
-[node name="Areas" type="Node2D" parent="."]
+[node name="Options" type="Node2D" parent="."]
 
-[node name="Market" parent="Areas" instance=ExtResource("1_ylocl")]
-position = Vector2(120, 160)
+[node name="PIEDRA" type="Button" parent="Options"]
+offset_left = 326.0
+offset_top = 404.0
+offset_right = 391.0
+offset_bottom = 435.0
+text = "PIEDRA"
 
-[node name="Farmland" parent="Areas" instance=ExtResource("1_x36xp")]
-position = Vector2(120, 320)
+[node name="PAPEL" type="Button" parent="Options"]
+offset_left = 326.0
+offset_top = 444.0
+offset_right = 391.0
+offset_bottom = 475.0
+text = "PAPEL"
 
-[node name="Home" parent="Areas" instance=ExtResource("3_5fq08")]
-position = Vector2(120, 480)
+[node name="TIJERAS" type="Button" parent="Options"]
+offset_left = 326.0
+offset_top = 484.0
+offset_right = 392.0
+offset_bottom = 515.0
+text = "TIJERAS"
 
-[node name="Pool" type="Node2D" parent="."]
+[node name="ALEJARSE" type="Button" parent="Options"]
+offset_left = 323.0
+offset_top = 528.0
+offset_right = 403.0
+offset_bottom = 559.0
+text = "ALEJARSE"
 
-[node name="Villager" parent="Pool" instance=ExtResource("4_dj5gm")]
-position = Vector2(410, 54)
+[node name="EXPENDEDORA" type="Button" parent="Options"]
+offset_left = 307.0
+offset_top = 576.0
+offset_right = 432.0
+offset_bottom = 607.0
+text = "EXPENDEDORA"
+
+[node name="VENTANA" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="VENTANA"]
+position = Vector2(240, 183)
+
+[node name="closed" type="Sprite2D" parent="VENTANA/Area2D"]
+scale = Vector2(4, 4)
+texture = ExtResource("2_04cfr")
+
+[node name="open" type="Sprite2D" parent="VENTANA/Area2D"]
+scale = Vector2(4, 4)
+texture = ExtResource("2_f1csy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VENTANA/Area2D"]
+shape = SubResource("RectangleShape2D_0i0ts")
+
+[node name="LOG" type="RichTextLabel" parent="."]
+offset_left = 44.0
+offset_top = 303.0
+offset_right = 236.0
+offset_bottom = 610.0
+scroll_following = true
+
+[node name="ORO" type="RichTextLabel" parent="."]
+offset_left = 36.0
+offset_top = 16.0
+offset_right = 121.0
+offset_bottom = 47.0
+text = "ORO:"
+scroll_following = true
+
+[connection signal="pressed" from="Options/PIEDRA" to="." method="_on_piedra_pressed"]
+[connection signal="pressed" from="Options/PAPEL" to="." method="_on_papel_pressed"]
+[connection signal="pressed" from="Options/TIJERAS" to="." method="_on_tijeras_pressed"]
+[connection signal="pressed" from="Options/ALEJARSE" to="." method="_on_alejarse_pressed"]
+[connection signal="pressed" from="Options/EXPENDEDORA" to="." method="_on_button_pressed"]
