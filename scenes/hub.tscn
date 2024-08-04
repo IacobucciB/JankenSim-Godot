@@ -25,5 +25,13 @@ offset_right = 448.0
 offset_bottom = 567.0
 text = "VENTANA"
 
+[node name="cama" type="Button" parent="."]
+offset_left = 392.0
+offset_top = 496.0
+offset_right = 447.0
+offset_bottom = 527.0
+text = "CAMA"
+
 [connection signal="pressed" from="expendedora" to="." method="_on_expendedora_pressed"]
 [connection signal="pressed" from="ventana" to="." method="_on_ventana_pressed"]
+[connection signal="pressed" from="cama" to="." method="_on_cama_pressed"]

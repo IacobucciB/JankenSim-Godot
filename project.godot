@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+Global="*res://global.tscn"
 Player="*res://player.tscn"
 
 [display]

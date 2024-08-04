@@ -7,3 +7,7 @@ func _on_ventana_pressed():
 
 func _on_expendedora_pressed():
 	get_tree().change_scene_to_file("res://scenes/expendedora.tscn")
+
+
+func _on_cama_pressed():
+	get_tree().change_scene_to_file("res://scenes/cama.tscn")

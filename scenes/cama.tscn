@@ -1,24 +1,43 @@
-[gd_scene load_steps=4 format=3 uid="uid://bnuefyfx2vc6x"]
+[gd_scene load_steps=3 format=3 uid="uid://bnuefyfx2vc6x"]
 
 [ext_resource type="Texture2D" uid="uid://cl7otiuyg0ww6" path="res://img/assets/Hub.png" id="1_3v8t2"]
-[ext_resource type="Texture2D" uid="uid://cn5iy3y84b4tf" path="res://img/colors/blue.png" id="2_xcwvd"]
-[ext_resource type="Texture2D" uid="uid://c7qgrvt8isff8" path="res://img/colors/orange.png" id="3_e371w"]
+[ext_resource type="Script" path="res://scenes/cama.gd" id="1_7mwwl"]
 
 [node name="Cama" type="Node2D"]
+script = ExtResource("1_7mwwl")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(4, 4)
 texture = ExtResource("1_3v8t2")
 centered = false
 
-[node name="ItemList" type="ItemList" parent="."]
-offset_left = 224.0
-offset_top = 336.0
-offset_right = 384.0
-offset_bottom = 480.0
-select_mode = 1
-item_count = 2
-item_0/text = "asd"
-item_0/icon = ExtResource("2_xcwvd")
-item_1/text = "asd"
-item_1/icon = ExtResource("3_e371w")
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="sleep" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 432.0
+offset_right = 398.0
+offset_bottom = 463.0
+text = "SLEEP"
+
+[node name="hub" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 480.0
+offset_right = 387.0
+offset_bottom = 511.0
+text = "HUB"
+
+[node name="tiempo" type="RichTextLabel" parent="."]
+offset_left = 320.0
+offset_top = 256.0
+offset_right = 448.0
+offset_bottom = 320.0
+
+[connection signal="pressed" from="Control/sleep" to="." method="_on_sleep_pressed"]
+[connection signal="pressed" from="Control/hub" to="." method="_on_hub_pressed"]
