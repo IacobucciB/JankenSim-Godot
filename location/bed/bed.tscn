@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://chqpub7f50p5q"]
+
+[ext_resource type="Script" path="res://location/bed/bed.gd" id="1_r0fw5"]
+
+[node name="Bed" type="Node2D"]
+script = ExtResource("1_r0fw5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SleepButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="HubButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextControl" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TimeTextLabel" type="RichTextLabel" parent="TextControl"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BedSprite2D" type="Sprite2D" parent="."]
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="Control/SleepButton" to="." method="_on_sleep_button_pressed"]
+[connection signal="pressed" from="Control/HubButton" to="." method="_on_hub_button_pressed"]

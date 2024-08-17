@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbtpclr3m4rlu"]
+
+[ext_resource type="Script" path="res://location/hub/hub.gd" id="1_rhixo"]
+
+[node name="Hub" type="Node2D"]
+script = ExtResource("1_rhixo")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+
+[node name="VendingMachineButton" type="Button" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Vending Machine"
+
+[node name="WindowButton" type="Button" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Window"
+
+[node name="BedButton" type="Button" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Bed"
+
+[node name="HubSprite2D" type="Sprite2D" parent="."]
+
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/VendingMachineButton" to="." method="_on_vending_machine_button_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/WindowButton" to="." method="_on_window_button_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/BedButton" to="." method="_on_bed_button_pressed"]
