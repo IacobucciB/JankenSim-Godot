@@ -10,7 +10,7 @@ func _on_ready():
 	randomize()
 
 func _on_hub_button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://location/hub/hub.tscn")
 
 func _on_move_away_button_pressed():
 	if is_window_open == true:
