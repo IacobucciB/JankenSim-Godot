@@ -11,22 +11,31 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="RockButton" type="Button" parent="GameControl"]
+[node name="MarginContainer" type="MarginContainer" parent="GameControl"]
 layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="PaperButton" type="Button" parent="GameControl"]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="MoveVBoxContainer" type="VBoxContainer" parent="GameControl/MarginContainer"]
+layout_mode = 2
 
-[node name="ScissorsButton" type="Button" parent="GameControl"]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="HubButton" type="Button" parent="GameControl/MarginContainer/MoveVBoxContainer"]
+layout_mode = 2
 
-[node name="HubButton" type="Button" parent="GameControl"]
-offset_right = 8.0
-offset_bottom = 8.0
+[node name="MoveAwayButton" type="Button" parent="GameControl/MarginContainer/MoveVBoxContainer"]
+layout_mode = 2
+
+[node name="PlayVBoxContainer" type="VBoxContainer" parent="GameControl/MarginContainer"]
+layout_mode = 2
+
+[node name="RockButton" type="Button" parent="GameControl/MarginContainer/PlayVBoxContainer"]
+layout_mode = 2
+
+[node name="PaperButton" type="Button" parent="GameControl/MarginContainer/PlayVBoxContainer"]
+layout_mode = 2
+
+[node name="ScissorsButton" type="Button" parent="GameControl/MarginContainer/PlayVBoxContainer"]
+layout_mode = 2
 
 [node name="TextControl" type="Control" parent="."]
 layout_mode = 3
@@ -47,3 +56,10 @@ offset_bottom = 40.0
 [node name="OpenedWindowSprite2D" type="Sprite2D" parent="."]
 
 [node name="ClosedWindowSprite2D" type="Sprite2D" parent="."]
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="GameControl/MarginContainer/MoveVBoxContainer/HubButton" to="." method="_on_hub_button_pressed"]
+[connection signal="pressed" from="GameControl/MarginContainer/MoveVBoxContainer/MoveAwayButton" to="." method="_on_move_away_button_pressed"]
+[connection signal="pressed" from="GameControl/MarginContainer/PlayVBoxContainer/RockButton" to="." method="_on_rock_button_pressed"]
+[connection signal="pressed" from="GameControl/MarginContainer/PlayVBoxContainer/PaperButton" to="." method="_on_paper_button_pressed"]
+[connection signal="pressed" from="GameControl/MarginContainer/PlayVBoxContainer/ScissorsButton" to="." method="_on_scissors_button_pressed"]
